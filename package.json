@@ -1,0 +1,20 @@
+{
+  "name": "complaint-management-system",
+  "version": "1.0.0",
+  "description": "College web development project - Complaint Management System",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8000 -o",
+    "dev": "http-server -p 8000 -o"
+  },
+  "keywords": [
+    "complaint",
+    "management",
+    "system"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

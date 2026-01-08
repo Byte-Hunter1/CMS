@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Complaint Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">CMS</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="complaint-form.html">New Complaint</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="dashboard-header">
+      <h2>My Dashboard</h2>
+      <a href="complaint-form.html" class="btn">+ New Complaint</a>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="stats">
+      <div class="stat-card">
+        <h3 id="totalComplaints">5</h3>
+        <p>Total Complaints</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="pendingComplaints">2</h3>
+        <p>Pending</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="resolvedComplaints">2</h3>
+        <p>Resolved</p>
+      </div>
+      <div class="stat-card">
+        <h3 id="inProgressComplaints">1</h3>
+        <p>In Progress</p>
+      </div>
+    </div>
+
+    <!-- Complaints List -->
+    <section class="complaints-section">
+      <h3>My Complaints</h3>
+      <div class="complaint-list" id="complaintList">
+
+        <div class="complaint-card">
+          <div class="complaint-header">
+            <div class="complaint-title">WiFi Connection Issues in Library</div>
+            <span class="status-badge status-in-progress">In Progress</span>
+          </div>
+          <div class="complaint-details">
+            The WiFi connection in the library is very slow and keeps disconnecting. This affects students trying to access online resources.
+          </div>
+          <div class="complaint-date">Submitted on: 15 Jan 2024</div>
+        </div>
+
+        <div class="complaint-card">
+          <div class="complaint-header">
+            <div class="complaint-title">Broken Water Cooler in Block A</div>
+            <span class="status-badge status-pending">Pending</span>
+          </div>
+          <div class="complaint-details">
+            The water cooler on the 2nd floor of Block A has been broken for over a week. Students need access to clean drinking water.
+          </div>
+          <div class="complaint-date">Submitted on: 12 Jan 2024</div>
+        </div>
+
+        <div class="complaint-card">
+          <div class="complaint-header">
+            <div class="complaint-title">Loud Construction Noise During Classes</div>
+            <span class="status-badge status-resolved">Resolved</span>
+          </div>
+          <div class="complaint-details">
+            Construction work near the classrooms is causing excessive noise during lecture hours, making it difficult to concentrate.
+          </div>
+          <div class="complaint-date">Submitted on: 8 Jan 2024</div>
+        </div>
+
+        <div class="complaint-card">
+          <div class="complaint-header">
+            <div class="complaint-title">Damaged Furniture in Computer Lab</div>
+            <span class="status-badge status-pending">Pending</span>
+          </div>
+          <div class="complaint-details">
+            Several chairs in Computer Lab 3 are damaged and need replacement. This is affecting the learning environment.
+          </div>
+          <div class="complaint-date">Submitted on: 5 Jan 2024</div>
+        </div>
+
+        <div class="complaint-card">
+          <div class="complaint-header">
+            <div class="complaint-title">Insufficient Lighting in Parking Area</div>
+            <span class="status-badge status-resolved">Resolved</span>
+          </div>
+          <div class="complaint-details">
+            The parking area lacks proper lighting, making it unsafe for students returning late in the evening.
+          </div>
+          <div class="complaint-date">Submitted on: 2 Jan 2024</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Complaint Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+

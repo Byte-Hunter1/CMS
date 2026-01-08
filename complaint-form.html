@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Complaint - Complaint Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">CMS</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="complaint-form.html">New Complaint</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="form-container" style="max-width: 700px;">
+      <h2>Submit a New Complaint</h2>
+      <form id="complaintForm" action="dashboard.html">
+        <div class="form-group">
+          <label for="complaintTitle">Complaint Title *</label>
+          <input type="text" id="complaintTitle" name="complaintTitle" placeholder="Enter a brief title for your complaint" required>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category *</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="infrastructure">Infrastructure</option>
+            <option value="facilities">Facilities</option>
+            <option value="academic">Academic</option>
+            <option value="hostel">Hostel</option>
+            <option value="canteen">Canteen</option>
+            <option value="library">Library</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="priority">Priority Level *</label>
+          <select id="priority" name="priority" required>
+            <option value="">Select priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="urgent">Urgent</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description *</label>
+          <textarea id="description" name="description" placeholder="Provide detailed information about your complaint..." required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location (Optional)</label>
+          <input type="text" id="location" name="location" placeholder="e.g., Block A, 2nd Floor, Room 205">
+        </div>
+
+        <button type="submit" class="btn btn-block">Submit Complaint</button>
+        <a href="dashboard.html" class="btn btn-secondary btn-block" style="margin-top: 1rem; text-align: center; display: block;">Cancel</a>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Complaint Management System. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
